@@ -15,8 +15,9 @@
 
 * Disadvantage
     * Hard to scale (Intense time consuming) -> if need to add server, have to do following: 
-        ```json 
+       ```markdown
         order it -> install OS and configuration -> dedicate a physical space 
         ```
+
 
 ### Cloud Computing
