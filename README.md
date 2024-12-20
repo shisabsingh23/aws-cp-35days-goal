@@ -1,6 +1,6 @@
 # 35Days Roadmap to AWS-CLF-C02
 
-### Server composed with below :
+## Day 1 - Server composed with below :
 * CPU + RAM =  Brain *(When we think of something we are doing computation like CPU and then we have to remember that which is like storing data in RAM)*
 * Storage
 * Database
@@ -20,7 +20,7 @@
         ```
 
 -----   
-### Cloud Computing
+## Day 2 - Cloud Computing
 *   On-demand Delivery of you get it when you need it (computer powert, db storage, applications and other IT resources)
 *   Pay as you go feature
 * Access resources as you need, almost instantly
@@ -62,7 +62,40 @@
 ![alt text](images/types-of-cloud-computing.png)
 
 
+## Day 3 - AWS Important Concepts
 
+#### AWS Regions
+* AWS Regions : Group of AZ that are connected together
+* **One region = Multiple AZ** 
+
+
+* Most AWS Services are going to be region specific
+    ```
+    eg: if we have a service in east region, when starting same service in west it will be like starting from scratch.
+  
+  ```
+
+#### How to choose an AWS region?
+ * Compliance : Some countries or region might have a law that states data of a country should never leave a country.
+ * Latency : Application that is on a region where your customer are could improve latency as its proximity is closer.
+ * Region specific service : Some region might have service that is only avaiable to that specific region and not others
+ * Pricing: Service cost might vary region to region
+
+#### AWS Availability Zones (AZ)
+* **One AZ = multiple Data center**
+* **One region = Multiple AZ** 
+* **Important** : If one AZ goes down another one is not affected
+![alt text](images/aws-az.png)
+
+#### AWS Shared Resposibility
+
+![alt text](images/shared-responsibility.png)
+
+### Question
+1) If az are not in synced what is advantage of using it? 
+* If application is setup for high availability, AWS automatically takes of routing traffic to a different AZ if one is down without human configuration required.
+
+* Also some services like S3 have data automatically replicated across multiple AZ in a region without human configuration required.
 -----   
 #### Resources
 https://docs.calebsargeant.com/en/latest/_downloads/e453ca3d882322df71a45024ecc4dbed/AWS%20Certified%20Cloud%20Practitioner%20Slides%20v2.11.0.pdf
