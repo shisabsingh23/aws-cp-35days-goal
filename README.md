@@ -96,6 +96,19 @@
 * If application is setup for high availability, AWS automatically takes of routing traffic to a different AZ if one is down without human configuration required.
 
 * Also some services like S3 have data automatically replicated across multiple AZ in a region without human configuration required.
------   
+----- 
+
+## Day 4 - IAM
+
+#### IAM
+* Global Service , not region specific
+* Group can only contain users not group -> Nested group not allowed bascially
+* Users can belong to multiple group
+* Policies: JSON Doc that is used to define permission of the user
+* Least privilige principle - try to give as minimum access as possible - don't give permissin user don't need
+* Not mandatory for users to be part of group
+
+  ![alt text](<images/IAM User-grp.png>)
+
 #### Resources
 https://docs.calebsargeant.com/en/latest/_downloads/e453ca3d882322df71a45024ecc4dbed/AWS%20Certified%20Cloud%20Practitioner%20Slides%20v2.11.0.pdf
